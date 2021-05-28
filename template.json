@@ -1,0 +1,109 @@
+{
+    "Actor": {
+        "types": [
+            "character"
+        ],
+        "templates": {
+            "base": {         
+                "baseresources": "",
+                "basetreasury": 0,
+                "biography": "",
+                "category": "Wizard",
+                "class": "Chronomancer",
+                "empowerment": 0,
+                "expbanked": 0,
+                "expscenario": 0,
+                "exptotal": 0,
+                "level": 0,
+                "levellog": "<ul><li>1:</li><li>2:</li><li>3:</li><li>4:</li><li>5:</li><li>6:</li><li>7:</li><li>8:</li><li>9:</li><li>10:</li></ul>",
+                "mod": 0,
+                "health": {
+                    "value": 14,
+                    "min": 0,
+                    "max": 14,
+                    "actual": 14,
+                    "bonus": 0,
+                    "rollname": "Health"
+                },
+                "stats": {
+                    "move": {
+                        "actual": 6,
+                        "effective": 6,
+                        "bonus": 0,
+                        "rollname": "Movement"
+                    },
+                    "armour": {
+                        "actual": 10,
+                        "effective": 10,
+                        "bonus": 0,
+                        "rollname": "Armour"
+                    },
+                    "will": {
+                        "actual": 4,
+                        "effective": 4,
+                        "bonus": 0,
+                        "rollname": "Will"
+                    },
+                    "fight": {
+                        "actual": 2,
+                        "effective": 2,
+                        "bonus": 0,
+                        "rollname": "Combat"
+                    },
+                    "shoot": {
+                        "actual": 0,
+                        "effective": 0,
+                        "bonus": 0,
+                        "rollname": "Shooting"
+                    }
+                }
+            }
+        },
+        "character": {
+            "templates": [
+                "base"
+            ]
+        }
+    },
+    "Item": {
+        "types": [
+            "item",
+            "feature",
+            "spell"
+        ],
+        "templates": {
+            "base": {
+                "description": ""
+            }
+        },
+        "item": {
+            "templates": [
+                "base"
+            ],
+            "category": "Other",
+            "subcategory": "None",
+            "damage": null,
+            "armour": null,
+            "range": null,
+            "effect": null,
+            "price": null,
+            "sale": null,
+            "ingredient": null
+        },
+        "feature": {
+            "templates": [
+                "base"
+            ]
+        },
+        "spell": {
+            "templates": [
+                "base"
+            ],
+            "bcn": 10,
+            "improved": 0,
+            "category": "Line of Sight",
+            "school": "Chronomancer",
+            "alignment": "Native"
+        }
+    }
+}

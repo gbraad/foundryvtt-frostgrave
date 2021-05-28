@@ -1,0 +1,48 @@
+.window-app {
+    box-shadow: 0 0 20px $accent-color;
+
+    .window-content {
+        background-image: url("../img/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(206, 70%, 96%);
+
+    }
+}
+
+.rollable {
+    &:hover,
+    &:focus {
+        cursor: pointer;
+    }
+}
+
+::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 3px;
+    background: $accent-color;
+    border: 1px solid white;
+}
+
+a:hover {
+    color: $accent-color;
+    text-shadow: 0 0 5px white;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime-local"]:focus {
+    box-shadow: 0 0 5px $accent-color;
+}
+
+.editor-edit {
+    display: none;
+    font-size: 1.25em;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+}
