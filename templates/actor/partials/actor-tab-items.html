@@ -29,8 +29,11 @@
 
             </div>
             <div class="media-content">
-                <div class="is-capitalized is-size-5 has-text-weight-bold">{{item.name}}</div>
-
+              {{#if (ne item.data.data.damage null)}}
+              <div class="is-capitalized is-size-5 has-text-weight-bold"><a>{{item.name}} <i class="fas fa-dice-d20"></i></a></div>
+              {{else}}
+              <div class="is-capitalized is-size-5 has-text-weight-bold">{{item.name}}</div>
+              {{/if}}
                 <div class="field is-grouped is-grouped-multiline">
 
                     <div class="control">

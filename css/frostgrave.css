@@ -36,7 +36,7 @@ input[type="datetime-local"]:focus {
 
 .editor-edit {
   display: none;
-  font-size: 1.25em;
+  font-size: 1.0em;
   position: absolute;
   top: 5px;
   right: 5px;
