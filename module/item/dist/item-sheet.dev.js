@@ -99,7 +99,7 @@ function (_ItemSheet) {
     /** @override */
     get: function get() {
       return mergeObject(_get(_getPrototypeOf(frostgraveItemSheet), "defaultOptions", this), {
-        classes: ["frostgrave", "sheet", "item"],
+        classes: ["foundryvtt-frostgrave", "sheet", "item"],
         width: 450,
         height: 500,
         tabs: [{

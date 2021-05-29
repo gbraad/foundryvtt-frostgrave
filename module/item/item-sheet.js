@@ -6,7 +6,7 @@ export class frostgraveItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["frostgrave", "sheet", "item"],
+      classes: ["foundryvtt-frostgrave", "sheet", "item"],
       width: 450,
       height: 500,
       tabs: [{
@@ -19,7 +19,7 @@ export class frostgraveItemSheet extends ItemSheet {
 
   /** @override */
   get template() {
-    const path = "systems/frostgrave/templates/item";
+    const path = "systems/foundryvtt-frostgrave/templates/item";
     // Return a single sheet for all item types.
     // return `${path}/item-sheet.html`;
 
@@ -33,7 +33,11 @@ export class frostgraveItemSheet extends ItemSheet {
   /** @override */
   getData() {
     const data = super.getData();
-    return data;
+    
+    let formData = duplicate(data.data)
+    console.log("ITEM", formData);
+
+    return formData;
   }
 
   /* -------------------------------------------- */

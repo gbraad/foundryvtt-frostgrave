@@ -9,14 +9,14 @@ export const preloadHandlebarsTemplates = async function() {
     const templatePaths = [
   
       // Actor Sheet Partials
-      "systems/frostgrave/templates/actor/partials/actor-header.html",
-      "systems/frostgrave/templates/actor/partials/actor-stats.html",
-      "systems/frostgrave/templates/actor/partials/actor-tab-navigation.html",
-      "systems/frostgrave/templates/actor/partials/actor-tab-notes.html",
-      "systems/frostgrave/templates/actor/partials/actor-tab-experience.html",
-      "systems/frostgrave/templates/actor/partials/actor-tab-homebase.html",
-      "systems/frostgrave/templates/actor/partials/actor-tab-items.html",
-      "systems/frostgrave/templates/actor/partials/actor-tab-spells.html"
+      "systems/foundryvtt-frostgrave/templates/actor/partials/actor-header.html",
+      "systems/foundryvtt-frostgrave/templates/actor/partials/actor-stats.html",
+      "systems/foundryvtt-frostgrave/templates/actor/partials/actor-tab-navigation.html",
+      "systems/foundryvtt-frostgrave/templates/actor/partials/actor-tab-notes.html",
+      "systems/foundryvtt-frostgrave/templates/actor/partials/actor-tab-experience.html",
+      "systems/foundryvtt-frostgrave/templates/actor/partials/actor-tab-homebase.html",
+      "systems/foundryvtt-frostgrave/templates/actor/partials/actor-tab-items.html",
+      "systems/foundryvtt-frostgrave/templates/actor/partials/actor-tab-spells.html"
   
       // Item Sheet Partials
     

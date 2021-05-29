@@ -7,7 +7,7 @@ export class frostgraveActorSheet extends ActorSheet {
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
             classes: ["frostgrave", "sheet", "actor"],
-            template: "systems/frostgrave/templates/actor/actor-sheet.html",
+            template: "systems/foundryvtt-frostgrave/templates/actor/actor-sheet.html",
             width: 650,
             height: 650,
             tabs: [{
@@ -23,17 +23,23 @@ export class frostgraveActorSheet extends ActorSheet {
     /** @override */
     getData() {
         const data = super.getData();
-        data.dtypes = ["String", "Number", "Boolean"];
+        let formData = {
+          data: data.data,
+          actor: this.actor,
+          dtypes: ["String", "Number", "Boolean"]
+        }
+
         //for (let attr of Object.values(data.data.attributes)) {
         //  attr.isCheckbox = attr.dtype === "Boolean";
         // }
 
         // Prepare items.
         if (this.actor.data.type == "character") {
-            this._prepareCharacterItems(data);
+            this._prepareCharacterItems(formData);
         }
-
-        return data;
+        
+        console.log("FORMDATA", formData);
+        return formData;
     }
 
     /** @override */
@@ -203,9 +209,9 @@ export class frostgraveActorSheet extends ActorSheet {
 
         // Iterate through items, allocating to containers
         // let totalWeight = 0;
-        for (let i of sheetData.items) {
+        for (let i of actorData.data.items) {
             let item = i.data;
-            i.img = i.img || DEFAULT_TOKEN;
+            //i.img = i.img || DEFAULT_TOKEN;
             // Append to gear.
             if (i.type === "item") {
                 gear.push(i);
@@ -221,8 +227,8 @@ export class frostgraveActorSheet extends ActorSheet {
         }
 
         // Assign and return
-        actorData.gear = gear;
-        actorData.features = features;
-        actorData.spells = spells;
+        sheetData.gear = gear;
+        sheetData.features = features;
+        sheetData.spells = spells;
     }
 }

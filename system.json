@@ -1,10 +1,10 @@
 {
-    "name": "frostgrave",
+    "name": "foundryvtt-frostgrave",
     "title": "Frostgrave",
     "description": "The Frostgrave system for Foundry VTT",
-    "version": "1.0.0",
-    "minimumCoreVersion": "0.6.5",
-    "compatibleCoreVersion": "0.6.6",
+    "version": "2.0.0",
+    "minimumCoreVersion": "0.8.0",
+    "compatibleCoreVersion": "0.8.5",
     "templateVersion": 2,
     "author": "Phenomen",
     "esmodules": [
@@ -17,35 +17,35 @@
     "packs": [{
             "name": "spellcasters",
             "label": "Spellcasters",
-            "system": "frostgrave",
+            "system": "foundryvtt-frostgrave",
             "path": "./packs/spellcasters.db",
             "entity": "Actor"
         },
         {
             "name": "soldiers",
             "label": "Soldiers",
-            "system": "frostgrave",
+            "system": "foundryvtt-frostgrave",
             "path": "./packs/soldiers.db",
             "entity": "Actor"
         },
         {
             "name": "armour",
             "label": "Armour",
-            "system": "frostgrave",
+            "system": "foundryvtt-frostgrave",
             "path": "./packs/armour.db",
             "entity": "Item"
         },
         {
             "name": "weapons",
             "label": "Weapons",
-            "system": "frostgrave",
+            "system": "foundryvtt-frostgrave",
             "path": "./packs/weapons.db",
             "entity": "Item"
         },
         {
             "name": "potions",
             "label": "Potions",
-            "system": "frostgrave",
+            "system": "foundryvtt-frostgrave",
             "path": "./packs/potions.db",
             "entity": "Item"
         }
@@ -58,8 +58,8 @@
     "gridDistance": 5,
     "gridUnits": "ft",
     "primaryTokenAttribute": "health",
-    "url": "https://github.com/Phenomen/foundry-frostgrave",
-    "manifest": "https://raw.githubusercontent.com/Phenomen/foundry-frostgrave/master/system.json",
-    "download": "https://github.com/Phenomen/foundry-frostgrave/archive/master.zip",
+    "url": "https://gitlab.com/LeRatierBretonnien/foundryvtt-frostgrave",
+    "manifest": "https://gitlab.com/LeRatierBretonnien/foundryvtt-frostgrave/-/raw/master/system.json",
+    "download": "https://gitlab.com/LeRatierBretonnien/foundryvtt-frostgrave/archive/master.zip",
     "license": "LICENSE.txt"
 }

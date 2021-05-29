@@ -10,7 +10,7 @@
                 </a>
               </p>
               <p class="control is-expanded">
-                <input class="input" type="text" name="data.empowerment" value="{{data.empowerment}}"
+                <input class="input" type="text" name="data.empowerment" value="{{data.data.empowerment}}"
                 data-dtype="Number">
               </p>
             </div>      
@@ -19,7 +19,7 @@
       </div>
       
 
-    {{#each actor.spells as |item id|}}
+    {{#each spells as |item id|}}
     <div class="box item-card my-2 py-2" data-item-id="{{item._id}}">
         <div class="media">
             <div class="media-left">
@@ -55,39 +55,39 @@
 
                     <div class="control">
                         <div class="tags has-addons">
-                            <span class="tag is-dark">{{item.data.school}}</span>
-                            <span class="tag is-light">{{item.data.category}}</span>
+                            <span class="tag is-dark">{{item.data.data.school}}</span>
+                            <span class="tag is-light">{{item.data.data.category}}</span>
                         </div>
                     </div>
 
                     <div class="control">
-                            <span class="tag is-primary is-light">{{item.data.alignment}}</span>
+                            <span class="tag is-primary is-light">{{item.data.data.alignment}}</span>
                     </div>
 
                     <div class="control">
                         <div class="tags has-addons">
                             <span class="tag is-info">BCN</span>
-                            <span class="tag is-info is-light">{{item.data.bcn}}</span>
+                            <span class="tag is-info is-light">{{item.data.data.bcn}}</span>
                         </div>
                     </div>
 
-                    {{#if (ne item.data.improved 0)}}
+                    {{#if (ne item.data.data.improved 0)}}
                     <div class="control">
                         <div class="tags has-addons">
                             <span class="tag is-info">Improved</span>
-                            <span class="tag is-info is-light">{{item.data.improved}}</span>
+                            <span class="tag is-info is-light">{{item.data.data.improved}}</span>
                         </div>
                     </div>
                     {{/if}}
 
 
                 </div>
-                <div class="media-content">{{formatHTMLMessage item.data.description}}</div>
+                <div class="media-content">{{{item.data.data.description}}}</div>
 
                 <button class="button is-info is-outlined is-fullwidth rollable is-capitalized mt-2"
-                    data-spell="1d20" data-label="{{name}}" data-bcn="{{item.data.bcn}}"
-                    data-improved="{{item.data.improved}}" data-alignment="{{item.data.alignment}}"
-                    data-empowerment="{{data.empowerment}}" data-description="{{item.data.description}}">
+                    data-spell="1d20" data-label="{{name}}" data-bcn="{{item.data.data.bcn}}"
+                    data-improved="{{item.data.improved}}" data-alignment="{{item.data.data.alignment}}"
+                    data-empowerment="{{data.empowerment}}" data-description="{{item.data.data.description}}">
                     <span class="icon">
                         <i class="fas fa-dice-d20"></i>
                     </span>

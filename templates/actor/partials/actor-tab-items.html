@@ -1,6 +1,6 @@
 <div class="tab gear container is-fluid" data-group="primary" data-tab="items">
 
-    {{#each actor.gear as |item id|}}
+    {{#each gear as |item id|}}
     <div class="box item-card my-2 py-2" data-item-id="{{item._id}}">
         <div class="media">
             <div class="media-left">
@@ -35,41 +35,41 @@
 
                     <div class="control">
                         <div class="tags has-addons">
-                            <span class="tag is-dark">{{item.data.category}}</span>
+                            <span class="tag is-dark">{{item.data.data.category}}</span>
                             {{#if (ne item.data.subcategory "None")}}
-                            <span class="tag is-light">{{item.data.subcategory}}</span>
+                            <span class="tag is-light">{{item.data.data.subcategory}}</span>
                             {{/if}}
                         </div>
                     </div>
 
-                    {{#if (ne item.data.damage null)}}
+                    {{#if (ne item.data.data.damage null)}}
                     <div class="control">
                         <div class="tags has-addons">
                             <span class="tag is-info">Damage</span>
-                            <span class="tag is-info is-light">{{item.data.damage}}</span>
+                            <span class="tag is-info is-light">{{item.data.data.damage}}</span>
                         </div>
                     </div>
                     {{/if}}
 
-                    {{#if (ne item.data.range null)}}
+                    {{#if (ne item.data.data.range null)}}
                     <div class="control">
                         <div class="tags has-addons">
                             <span class="tag is-info">Range</span>
-                            <span class="tag is-info is-light">{{item.data.range}}</span>
+                            <span class="tag is-info is-light">{{item.data.data.range}}</span>
                         </div>
                     </div>
                     {{/if}}
 
-                    {{#if (ne item.data.armour null)}}
+                    {{#if (ne item.data.data.armour null)}}
                     <div class="control">
                         <div class="tags has-addons">
                             <span class="tag is-info">Armour</span>
-                            <span class="tag is-info is-light">{{item.data.armour}}</span>
+                            <span class="tag is-info is-light">{{item.data.data.armour}}</span>
                         </div>
                     </div>
                     {{/if}}
 
-                    {{#if (and (ne item.data.effect "") (ne item.data.effect null))}}
+                    {{#if (and (ne item.data.data.effect "") (ne item.data.data.effect null))}}
                     <div class="control">
                         <div class="tags has-addons">
                             <span class="tag is-primary">Effect</span>
@@ -78,26 +78,26 @@
                     </div>
                     {{/if}}
 
-                    {{#if (ne item.data.price null)}}
+                    {{#if (ne item.data.data.price null)}}
                     <div class="control">
                         <div class="tags has-addons">
                             <span class="tag is-warning">Price</span>
-                            <span class="tag is-warning is-light">{{item.data.price}}</span>
+                            <span class="tag is-warning is-light">{{item.data.data.price}}</span>
                         </div>
                     </div>
                     {{/if}}
 
-                    {{#if (ne item.data.sale null)}}
+                    {{#if (ne item.data.data.sale null)}}
                     <div class="control">
                         <div class="tags has-addons">
                             <span class="tag is-warning">Sale</span>
-                            <span class="tag is-warning is-light">{{item.data.sale}}</span>
+                            <span class="tag is-warning is-light">{{item.data.data.sale}}</span>
                         </div>
                     </div>
                     {{/if}}
 
                 </div>
-                <div class="media-content">{{formatHTMLMessage item.data.description}}</div>
+                <div class="media-content">{{{item.data.data.description}}}</div>
             </div>
         </div>
     </div>

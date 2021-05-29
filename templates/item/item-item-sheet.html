@@ -4,13 +4,13 @@
     <div class="column is-2">
 
       <figure class="image is-square">
-        <img class="is-cover" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+        <img class="is-cover" src="{{img}}" data-edit="img" title="{{name}}" />
       </figure>
     </div>
 
     <div class="column">
 
-      <input class="input is-info is-medium" name="name" type="text" value="{{item.name}}" placeholder="Name" />
+      <input class="input is-info is-medium" name="name" type="text" value="{{name}}" placeholder="Name" />
 
       <div class="columns pt-2">
 
@@ -167,7 +167,7 @@
         </div>
       </div>
 
-      {{#if (eq data.subcategory "Greater Potion")}}
+      {{#if (eq data.data.subcategory "Greater Potion")}}
       <div class="field is-horizontal">
         <div class="field-label is-normal">
           <label class="label">Ingredient Price</label>
