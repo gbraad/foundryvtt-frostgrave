@@ -109,8 +109,8 @@ export class frostgraveActorSheet extends ActorSheet {
         const dataset = element.dataset;
 
         if (dataset.roll) {
-            let roll = new Roll(dataset.roll, this.actor.data.data);
-            let damage = parseInt(roll.roll().total) + parseInt(dataset.bonus);
+            let roll = new Roll(dataset.roll, this.actor.data.data );
+            let damage = parseInt(roll.evaluate( {async: false} ).total) + parseInt(dataset.bonus);
             let rollflavor = `${dataset.label} Roll: ` + roll.total;
 
             if (dataset.label == "Combat" || dataset.label == "Shooting") {
@@ -151,7 +151,7 @@ export class frostgraveActorSheet extends ActorSheet {
             let roll = new Roll(`1d20+` + empowerment);
             //let roll = new Roll(`(1d20+` + empowerment + `)ms>=` + difficulty);
 
-            roll.roll();
+            roll.evaluate( { async: false});
 
             let rollresult = difficulty - roll.total;
 
