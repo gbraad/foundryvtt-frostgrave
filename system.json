@@ -2,10 +2,10 @@
     "name": "foundryvtt-frostgrave",
     "title": "Frostgrave",
     "description": "The Frostgrave system for Foundry VTT",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "minimumCoreVersion": "0.8.0",
     "compatibleCoreVersion": "0.8.5",
-    "templateVersion": 3,
+    "templateVersion": 4,
     "author": "LeRatierBretonnien/Phenomen",
     "esmodules": [
         "module/frostgrave.js"

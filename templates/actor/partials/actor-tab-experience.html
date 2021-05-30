@@ -3,17 +3,17 @@
     <div class="columns">
 
         <div class="column">
-            <label class="label">Level</label>
+            <label class="label">{{localize "FROSTGRAVE.Level"}}</label>
             <input class="input" name="data.level" type="text" value="{{data.data.level}}" data-dtype="Number" />
         </div>
 
         <div class="column">
-            <label class="label">Scenario Experience</label>
+            <label class="label">{{localize "FROSTGRAVE.ScenarioExperience"}}</label>
             <input class="input" name="data.expscenario" type="text" value="{{data.data.expscenario}}" data-dtype="Number" />
         </div>
 
         <div class="column">
-            <label class="label">Banked Experience</label>
+            <label class="label">{{localize "FROSTGRAVE.BankedExperience"}}</label>
             <input class="input" name="data.expbanked" type="text" value="{{data.data.expbanked}}" data-dtype="Number" />
         </div>
 
@@ -21,7 +21,7 @@
 
     <progress class="progress is-large is-info" value="{{data.data.exptotal}}" max="100"></progress>
 
-    <h2 class="mb-2">Leveling Log</h2>
+    <h2 class="mb-2">{{localize "FROSTGRAVE.LevellingLog"}}</h2>
     {{editor content=data.data.levellog target="data.levellog" button=true owner=owner editable=editable}}
 
 </div>

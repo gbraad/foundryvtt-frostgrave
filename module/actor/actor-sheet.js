@@ -55,8 +55,15 @@ export class frostgraveActorSheet extends ActorSheet {
         // Edit Inventory Item
         html.find(".item-edit").click((ev) => {
             const card = $(ev.currentTarget).parents(".item-card");
-            const item = this.actor.getOwnedItem(card.data("item-id"));
+            const item = this.actor.items.get(card.data("item-id"));
             item.sheet.render(true);
+        });
+
+        html.find(".weapon-attack a").click((ev) => {
+          const card = $(ev.currentTarget).parents(".item-card");
+          const item = this.actor.items.get(card.data("item-id"));
+          console.log("ACTOR: ", this.actor);
+          this.actor.attackWeapon(item);
         });
 
         // Delete Inventory Item

@@ -1,3 +1,17 @@
 {
-  
+  "FROSTGRAVE.Homebase": "Homebase",
+  "FROSTGRAVE.Level": "Level",
+  "FROSTGRAVE.ScenarioExperience": "Scenario Experience",
+  "FROSTGRAVE.BankedExperience": "Banked Experience",
+  "FROSTGRAVE.LevellingLog": "Levelling log",
+  "FROSTGRAVE.Health": "Health",
+  "FROSTGRAVE.Max": "Max",
+  "FROSTGRAVE.Current": "Current",
+  "FROSTGRAVE.Actual": "Actual",
+  "FROSTGRAVE.Spells": "Spells",
+  "FROSTGRAVE.Items": "Items",
+  "FROSTGRAVE.AddItem":"Add Item",
+
+  "FROSTGRAVE.SelectTargetNeeded": "You must select a target to attack with a Weapon"
+
 }

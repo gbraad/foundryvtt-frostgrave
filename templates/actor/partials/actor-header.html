@@ -17,11 +17,10 @@
                 <div class="select is-fullwidth">
                     <select name="data.category" data-dtype="String">
                         {{#select data.data.category}}
-                        <option value="Wizard">Wizard</option>
-                        <option value="Apprentice">Apprentice</option>
-                        <option value="Soldier">Soldier</option>
-                        <option value="Creature">Creature</option>
-                        <option value="Base">Base</option>
+                        <option value="Wizard">{{localize Wizard}}</option>
+                        <option value="Apprentice">{{localize Apprentice}}</option>
+                        <option value="Soldier">{{localize Soldier}}</option>
+                        <option value="Creature">{{localize Creature}}</option>
                         {{/select}}
                     </select>
                 </div>
@@ -32,34 +31,34 @@
                     <select name="data.class" data-dtype="String">
                         {{#select data.data.class}}
                         {{#if (or (eq data.data.category "Wizard") (eq data.data.category "Apprentice"))}}
-                        <option value="Chronomancer">Chronomancer</option>
-                        <option value="Elementalist">Elementalist</option>
-                        <option value="Enchanter">Enchanter</option>
-                        <option value="Illusionist">Illusionist</option>
-                        <option value="Necromancer">Necromancer</option>
-                        <option value="Sigilist">Sigilist</option>
-                        <option value="Soothsayer">Soothsayer</option>
-                        <option value="Summoner">Summoner</option>
-                        <option value="Thaumaturge">Thaumaturge</option>
-                        <option value="Witch">Witch</option>
+                        <option value="Chronomancer">{{localize Chronomancer}}</option>
+                        <option value="Elementalist">{{localize Elementalist}}</option>
+                        <option value="Enchanter">{{localize Enchanter}}</option>
+                        <option value="Illusionist">{{localize Illusionist}}</option>
+                        <option value="Necromancer">{{localize Necromancer}}</option>
+                        <option value="Sigilist">{{localize Sigilist}}</option>
+                        <option value="Soothsayer">{{localize Soothsayer}}</option>
+                        <option value="Summoner">{{localize Summoner}}</option>
+                        <option value="Thaumaturge">{{localize Thaumaturge}}</option>
+                        <option value="Witch">{{localize Witch}}</option>
                         {{/if}}
                         {{#if (eq data.data.category "Soldier")}}
-                        <option value="Standard">Standard</option>
-                        <option value="Specialist">Specialist</option>
+                        <option value="Standard">{{localize Standard}}</option>
+                        <option value="Specialist">{{localize Specialist}}</option>
                         {{/if}}
                         {{#if (eq data.data.category "Creature")}}
-                        <option value="Uncontrolled">Uncontrolled</option>
-                        <option value="Controlled">Controlled</option>
+                        <option value="Uncontrolled">{{localize Uncontrolled}}</option>
+                        <option value="Controlled">{{localize Controlled}}</option>
                         {{/if}}
                         {{#if (eq data.data.category "Base")}}
-                        <option value="Inn">Inn</option>
-                        <option value="Temple">Temple</option>
-                        <option value="Crypt">Crypt</option>
-                        <option value="Tower">Tower</option>
-                        <option value="Treasury">Treasury</option>
-                        <option value="Brewery">Brewery</option>
-                        <option value="Library">Library</option>
-                        <option value="Laboratory">Laboratory</option>
+                        <option value="Inn">{{localize Inn}}</option>
+                        <option value="Temple">{{localize Temple}}</option>
+                        <option value="Crypt">{{localize Crypt}}</option>
+                        <option value="Tower">{{localize Tower}}</option>
+                        <option value="Treasury">{{localize Treasury}}</option>
+                        <option value="Brewery">{{localize Brewery}}</option>
+                        <option value="Library">{{localize Library}}</option>
+                        <option value="Laboratory">{{localize Laboratory}}</option>
                         {{/if}}
                         {{/select}}
                     </select>

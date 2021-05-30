@@ -14,26 +14,19 @@
                             <i class="fas fa-dice-d20"></i>
                         </span>
                         <span>
-                            Health
+                            {{localize "FROSTGRAVE.Health"}}
                         </span> </button>
                 </p>
             </div>
             <div class="column">
-                <p class="control">
-                    <span class="help">Actual</span>
-                    <input class="input" type="text" name="data.health.actual" value="{{data.data.health.actual}}"
-                        data-dtype="Number">
-                </p>
-            </div>
-            <div class="column">
-                <span class="help">Effective</span>
+                <span class="help">{{localize "FROSTGRAVE.Max"}}</span>
                 <p class="control">
                     <input class="input" type="text" name="data.health.max" value="{{data.data.health.max}}"
                         data-dtype="Number">
                 </p>
             </div>
             <div class="column">
-                <span class="help">Current</span>
+                <span class="help">{{localize "FROSTGRAVE.Current"}}</span>
                 <p class="control">
                     <input class="input is-danger" type="text" name="data.health.value" value="{{data.data.health.value}}"
                         data-dtype="Number">
@@ -59,35 +52,26 @@
                         <i class="fas fa-dice-d20"></i>
                     </span>
                     <span>
-                        {{key}}
+                        {{localize key}}
                     </span>
                 </button>
                 </p>
             </div>
             <div class="column">
                 <p class="control">
-                    <span class="help">Actual
+                    <span class="help">{{localize "FROSTGRAVE.Actual"}}
                 </p>
                 <input class="input" type="text" name="data.stats.{{key}}.actual" value="{{stat.actual}}"
                     data-dtype="Number">
                 </p>
             </div>
             <div class="column">
-                <span class="help">Effective</span>
+                <span class="help">{{localize "FROSTGRAVE.Max"}}</span>
                 <p class="control">
                     <input class="input" type="text" name="data.stats.{{key}}.effective" value="{{stat.effective}}"
                         data-dtype="Number">
                 </p>
             </div>
-            {{#if (or (eq key "fight") (eq key "shoot"))}}
-            <div class="column">
-                <span class="help">Dmg. Bonus</span>
-                <p class="control">
-                    <input class="input" type="text" name="data.stats.{{key}}.bonus" value="{{stat.bonus}}"
-                        data-dtype="Number">
-                </p>
-            </div>
-            {{/if}}
         </div>
 
     </div>

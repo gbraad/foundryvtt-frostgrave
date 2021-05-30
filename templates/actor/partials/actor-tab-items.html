@@ -30,7 +30,7 @@
             </div>
             <div class="media-content">
               {{#if (ne item.data.data.damage null)}}
-              <div class="is-capitalized is-size-5 has-text-weight-bold"><a>{{item.name}} <i class="fas fa-dice-d20"></i></a></div>
+              <div class="is-capitalized is-size-5 has-text-weight-bold weapon-attack"><a>{{item.name}} <i class="fas fa-dice-d20"></i></a></div>
               {{else}}
               <div class="is-capitalized is-size-5 has-text-weight-bold">{{item.name}}</div>
               {{/if}}
@@ -48,7 +48,7 @@
                     {{#if (ne item.data.data.damage null)}}
                     <div class="control">
                         <div class="tags has-addons">
-                            <span class="tag is-info">Damage</span>
+                            <span class="tag is-info">{{localize Damage}}</span>
                             <span class="tag is-info is-light">{{item.data.data.damage}}</span>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                     {{#if (ne item.data.data.range null)}}
                     <div class="control">
                         <div class="tags has-addons">
-                            <span class="tag is-info">Range</span>
+                            <span class="tag is-info">{{localize Range}}</span>
                             <span class="tag is-info is-light">{{item.data.data.range}}</span>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                     {{#if (ne item.data.data.armour null)}}
                     <div class="control">
                         <div class="tags has-addons">
-                            <span class="tag is-info">Armour</span>
+                            <span class="tag is-info">{{localize Armour}}</span>
                             <span class="tag is-info is-light">{{item.data.data.armour}}</span>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                     {{#if (and (ne item.data.data.effect "") (ne item.data.data.effect null))}}
                     <div class="control">
                         <div class="tags has-addons">
-                            <span class="tag is-primary">Effect</span>
+                            <span class="tag is-primary">{{localize Effect}}</span>
                             <span class="tag is-primary is-light">{{item.data.effect}}</span>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                     {{#if (ne item.data.data.price null)}}
                     <div class="control">
                         <div class="tags has-addons">
-                            <span class="tag is-warning">Price</span>
+                            <span class="tag is-warning">{{localize Price}}</span>
                             <span class="tag is-warning is-light">{{item.data.data.price}}</span>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                     {{#if (ne item.data.data.sale null)}}
                     <div class="control">
                         <div class="tags has-addons">
-                            <span class="tag is-warning">Sale</span>
+                            <span class="tag is-warning">{{localize Sale}}</span>
                             <span class="tag is-warning is-light">{{item.data.data.sale}}</span>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
         <span class="icon is-small">
             <i class="fas fa-plus"></i>
         </span>
-        <span>Add Item</span>
+        <span>{{localize "FROSTGRAVE.AddItem"}}</span>
     </button>
 
 </div>

@@ -21,12 +21,13 @@ Hooks.once("init", async function () {
   };
 
   // Define custom Entity classes
-  CONFIG.Actor.documentClas = frostgraveActor;
-  CONFIG.Item.documentClas = frostgraveItem;
+  CONFIG.Actor.documentClass = frostgraveActor;
+  CONFIG.Item.documentClass = frostgraveItem;
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("foundryvtt-frostgrave", frostgraveActorSheet, {
+    types: ["character"],
     makeDefault: true,
   });
   Items.unregisterSheet("core", ItemSheet);
